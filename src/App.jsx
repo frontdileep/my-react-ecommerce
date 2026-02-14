@@ -12,7 +12,7 @@ function App() {
   if (!user) {
     return <Login setUser={setUser} />;
   }
-
+  
   return (
     <BrowserRouter>
       <ProductProvider>
@@ -26,13 +26,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-// const App = () => {
-//   return(
-// <UseState/>
-//   )
-// }
-// export default App
