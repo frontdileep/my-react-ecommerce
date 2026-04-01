@@ -6,6 +6,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Products />} />
+      <Route path="/products" element={<Products />} />
       <Route path="/cart" element={<Cart />} />
     </Routes>
   );

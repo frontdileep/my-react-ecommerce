@@ -6,9 +6,9 @@ export const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     const getProducts = async () => {
-      const res = await fetch("https://fakestoreapi.com/products");
+      const res = await fetch("https://dummyjson.com/products");
       const data = await res.json();
-      setProducts(data);
+      setProducts(data.products);;
     };
 
     getProducts();

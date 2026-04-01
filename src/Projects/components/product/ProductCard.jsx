@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <Box borderWidth="1px" p={4} borderRadius="md" textAlign="center">
-      <Image src={product.image} h="120px" mx="auto" mb={2}/>
+      <Image src={product.images} h="120px" mx="auto" mb={2}/>
 
       <Text fontWeight="bold" noOfLines={1}>
         {product.title}

@@ -8,7 +8,7 @@ const CartItem = ({ item }) => {
     <Box borderWidth="1px" p={4} mb={3} borderRadius="md">
       <Flex gap={4} align="flex-start">
         <Box>
-          <Image src={item.image} boxSize="100px" objectFit="contain" />
+          <Image src={item.images} boxSize="100px" objectFit="contain" />
           <Select mt={2} size="sm" value={item.qty} onChange={(e) => updateQty(item.id, Number(e.target.value))}>
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(q => (
               <option key={q} value={q}>Qty : {q}</option>
